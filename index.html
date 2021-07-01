@@ -12,11 +12,28 @@
 
 <body>
     <div id="app">
-        <h1>Product goes here</h1>
+        <div class="nav-bar"></div>
+        <div class="product-display">
+            <div class="product-container">
+                <div class="product-image">
+                    <!-- image goes here -->
+                </div>
+                <div class="product-info">
+                    <h1>{{product}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="descrip">
+        <h2>{{descrippro}}</h2>
     </div>
 
     <!-- Import Js -->
     <script src="./main.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+        const mountedDes = descrip.mount('#descrip')
+    </script>
 </body>
 
 </html>
